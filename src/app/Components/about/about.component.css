@@ -1,0 +1,19 @@
+.about-section {
+  background: #fff;
+  margin-top: 40px;
+}
+
+.main-img {
+  border-radius: 25px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.overlay-img {
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+  width: 200px;
+  border: 6px solid #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}

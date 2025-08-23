@@ -1,0 +1,56 @@
+<section class="fleet-section py-5">
+  <div class="container">
+    <div class="text-center">
+           <span class="text-brand fw-bold" style="font-size:1.1rem;">&#10033; Our Fleet</span>
+    </div>
+    <h1 class="display-5 fw-bold mb-4 text-center">
+         Explore our perfect and <br> extensive fleet
+    </h1>
+
+    <!-- Slider Wrapper -->
+    <div class="carousel-container position-relative overflow-hidden">
+  <div class="carousel-track d-flex" [style.transform]="getTransform()" style="transition: transform 0.5s ease;">
+    
+    <div class="card shadow-sm rounded-4 p-4 me-3" 
+         *ngFor="let review of reviews"
+         style="min-width: 25%; max-width: 25%;">
+         
+      <!-- Rating Stars -->
+      <div class="mb-2">
+        <span *ngFor="let star of [].constructor(review.rating)">
+          <i class="bi bi-star-fill text-warning fs-5"></i>
+        </span>
+      </div>
+
+      <!-- Feedback -->
+      <p class="text-secondary mb-4" style="font-size: 1rem;">
+        {{ review.feedback }}
+      </p>
+      <hr>
+
+      <!-- User Info -->
+      <div class="d-flex align-items-center mt-3">
+        <img [src]="review.image" alt="{{review.name}}" 
+             class="rounded-circle me-3" 
+             style="width:48px;height:48px;object-fit:cover;">
+        <div>
+          <div class="fw-bold" style="font-size: 1.1rem;">{{ review.name }}</div>
+          <div class="text-secondary" style="font-size: 0.95rem;">{{ review.role }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buttons at the bottom center -->
+  <div class="d-flex justify-content-center mt-3">
+    <button class="btn btn-reviews me-2" (click)="prev()">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button class="btn btn-reviews" (click)="next()">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+</div>
+
+  </div>
+</section>

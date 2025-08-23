@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --brand-color: #FF3600;
+}
+.text-brand {
+  color: var(--brand-color) !important;
+}
+
+.btn-outline-brand {
+  color: var(--brand-color) !important;
+  border: 2px solid var(--brand-color) !important;
+}
+.bg-brand {
+  background-color: var(--brand-color) !important;
+}
+.btn-brand {
+  background-color: var(--brand-color) !important;
+  color: #fff !important;
+  border: none;
+}
+.btn-brand:hover {
+  background-color: #e53000 !important;
+  color: #fff !important;
+}

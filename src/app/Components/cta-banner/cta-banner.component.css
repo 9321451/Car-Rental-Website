@@ -1,0 +1,34 @@
+.cta-banner-bg {
+  background: #111 url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="39" height="39" rx="7.5" fill="none" stroke="%23222222"/></svg>') repeat;
+  border-radius: 4rem;
+  height: 400px;
+}
+.btn-orange {
+  background: #ff4d0a;
+  color: #fff;
+  border: none;
+  transition: background 0.2s;
+}
+.btn-orange:hover {
+  background: #ff6a2b;
+  color: #fff;
+}
+.text-white-50 {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+.banner{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+@media (max-width: 991.98px) {
+  .cta-banner-bg {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 2rem 1rem !important;
+  }
+  .cta-banner-bg img {
+    max-width: 250px !important;
+    margin-top: 2rem;
+  }
+}

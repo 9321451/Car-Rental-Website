@@ -1,0 +1,24 @@
+.carousel-container {
+  width: 100%;
+  
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.btn-reviews{
+    background-color: #FF3600;
+  color: #fdfdfc;
+  border-radius: 50% ;
+  width: 45px;
+  height: 45px;
+}
+
+.card{
+    border: solid 1px #d3cece;
+}
+
+

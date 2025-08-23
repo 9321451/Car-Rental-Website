@@ -1,0 +1,21 @@
+.hero {
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+/* Booking form overlaps bottom of hero */
+.booking-form {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  margin-bottom: 70px;
+}
+
+.text-start{
+  color: black;
+  font-size: 1.25rem;
+}

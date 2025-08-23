@@ -1,0 +1,45 @@
+<section class="fleet-section py-5">
+  <div class="container">
+    <div class="text-center">
+           <span class="text-brand fw-bold" style="font-size:1.1rem;">&#10033; Our Fleet</span>
+    </div>
+    <h1 class="display-5 fw-bold mb-4 text-center">
+         Explore our perfect and <br> extensive fleet
+    </h1>
+
+    <!-- Slider Wrapper -->
+    <div class="fleet-slider-wrapper">
+      <div class="fleet-slider" [style.transform]="getTransform()">
+        <div class="fleet-card-wrapper" *ngFor="let car of fleet">
+          <div class="card h-100 fleet-card shadow-sm">
+            <img [src]="car.image" class="card-img-top" [alt]="car.name">
+            <div class="card-body">
+              <h5 class="fw-bold">{{ car.name }}</h5>
+              <ul class="list-unstyled text-muted small mb-3">
+                <li><i class="bi bi-car-front me-2"></i> Type: {{ car.type }}</li>
+                <li><i class="bi bi-door-open me-2"></i> Doors: {{ car.doors }}</li>
+                <li><i class="bi bi-people me-2"></i> Passengers: {{ car.passengers }}</li>
+              </ul>
+              <div class="fs-5 fw-bold">
+                Rent: {{ car.rent }}
+              </div>
+              <button class="btn btn-fleet rounded-circle d-flex align-items-center justify-content-center ms-auto" style="width:45px; height:45px;">
+                <i class="bi bi-arrow-right fs-5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="d-flex justify-content-center mt-4 gap-3">
+      <button class="btn btn-slide" (click)="prev()">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="btn btn-slide" (click)="next()">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+<section 
+  class="hero d-flex align-items-center text-center text-white"
+  [ngStyle]="{
+    'background': 'url(' + currentImage + ') center/cover no-repeat',
+    'height': '100vh',
+    'position': 'relative',
+    'border-radius': '50px'
+  }">
+
+  <div class="container">
+    <!-- Welcome text -->
+    <p class="text-brand fw-semibold mb-2 fs-3">*Welcome To Car Rent</p>
+
+    <!-- Heading -->
+    <h1 class="display-4 fw-bold mb-3">
+      Looking to save more on<br> your rental car?
+    </h1>
+
+    <!-- Subheading -->
+    <p class="lead mb-4">
+      Whether you’re planning a weekend getaway, a business trip, or just need a reliable ride 
+      for the day, we offer a wide range of vehicles to suit your needs.
+    </p>
+
+    <!-- Buttons -->
+    <div class="d-flex justify-content-center gap-3">
+      <a href="#" class="btn btn-brand btn-lg rounded-pill px-4">
+        Book A Rental <i class="bi bi-arrow-up-right ms-1"></i>
+      </a>
+      <a href="#" class="btn btn-light btn-lg rounded-pill px-4">
+        Learn More <i class="bi bi-arrow-up-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Booking Form -->
+  <div class="booking-form container">
+    <div class="row bg-white shadow rounded-4 py-3 px-4 align-items-center">
+      <div class="col-md fw-bold text-start">Need to Rent a Luxury Car ?</div>
+      <div class="col-md"><input type="text" class="form-control" placeholder="Full Name"></div>
+      <div class="col-md"><input type="text" class="form-control" placeholder="Mobile No"></div>
+      <div class="col-md"><input type="text" class="form-control" placeholder="Pickup Location"></div>
+      <div class="col-md"><input type="date" class="form-control"></div>
+      <div class="col-md-auto">
+        <button class="btn btn-brand px-4">Send</button>
+      </div>
+    </div>
+  </div>
+</section>
