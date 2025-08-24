@@ -1,54 +1,18 @@
 <section class="services-section d-flex align-items-center text-center text-lg-start">
   <div class="container">
-    <div class="text-center ">
+    <div class="text-center">
        <span class="text-brand fw-bold" style="font-size:1.1rem;">&#10033; Our Services</span>
     </div>
     <h1 class="fw-bold text-center mb-5">Explore our wide range of <br> rental services</h1>
 
     <!-- Cards Row -->
     <div class="row g-4">
-      <!-- Service 1 -->
-      <div class="col-md-3">
+      <!-- Loop services -->
+      <div class="col-md-3" *ngFor="let service of services">
         <div class="card h-100 shadow-sm p-4 service-card">
-          <div class="icon text-brand fs-1 mb-3"><i class="bi bi-car-front-fill"></i></div>
-          <h5 class="fw-bold">Car Rental With Driver</h5>
-          <p class="text-muted">Enhance your rental experience with additional options.</p>
-          <button class="btn btn-outline-brand rounded-circle ms-auto">
-            <i class="bi bi-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="col-md-3">
-        <div class="card h-100 shadow-sm p-4 service-card">
-          <div class="icon text-brand fs-1 mb-3"><i class="bi bi-briefcase-fill"></i></div>
-          <h5 class="fw-bold">Business Car Rental</h5>
-          <p class="text-muted">Enhance your rental experience with additional options.</p>
-          <button class="btn btn-outline-brand rounded-circle ms-auto">
-            <i class="bi bi-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="col-md-3">
-        <div class="card h-100 shadow-sm p-4 service-card">
-          <div class="icon text-brand fs-1 mb-3"><i class="bi bi-airplane-fill"></i></div>
-          <h5 class="fw-bold">Airport Transfer</h5>
-          <p class="text-muted">Enhance your rental experience with additional options.</p>
-          <button class="btn btn-outline-brand rounded-circle ms-auto">
-            <i class="bi bi-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Service 4 -->
-      <div class="col-md-3">
-        <div class="card h-100 shadow-sm p-4 service-card">
-          <div class="icon text-brand fs-1 mb-3"><i class="bi bi-person-badge-fill"></i></div>
-          <h5 class="fw-bold">Chauffeur Services</h5>
-          <p class="text-muted">Enhance your rental experience with additional options.</p>
+          <div class="icon text-brand fs-1 mb-3"><i [ngClass]="service.icon"></i></div>
+          <h5 class="fw-bold">{{service.title}}</h5>
+          <p class="text-muted">{{service.description}}</p>
           <button class="btn btn-outline-brand rounded-circle ms-auto">
             <i class="bi bi-arrow-right"></i>
           </button>
@@ -65,7 +29,7 @@
 
     <!-- View All Button -->
     <div class="text-center mt-5">
-      <a href="#" class="btn btn-brand btn-lg rounded-pill px-5 ">View All Services</a>
+      <a routerLink="services" class="btn btn-brand btn-lg rounded-pill px-5">View All Services</a>
     </div>
   </div>
 </section>

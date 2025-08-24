@@ -1,0 +1,31 @@
+.btn-orange {
+  background: #ff4d0a;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  transition: background 0.2s;
+}
+.btn-orange:hover {
+  background: #ff6a2b;
+  color: #fff;
+}
+.bg-orange {
+  background: #ff4d0a !important;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ff4d0a;
+}
+.alert-success {
+  color: #198754;
+  background-color: #eafaf1;
+  border-color: #b6f0d3;
+}
+@media (max-width: 991.98px) {
+  .rounded-4 {
+    border-radius: 1.2rem !important;
+  }
+  .bg-black {
+    border-radius: 1.2rem !important;
+  }
+}

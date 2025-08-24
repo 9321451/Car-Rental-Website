@@ -1,0 +1,100 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div class="row rounded-4 border p-4 p-lg-5 align-items-stretch bg-white" style="box-shadow:0 2px 24px rgba(0,0,0,0.04);">
+        <!-- Contact Info -->
+        <div class="col-lg-5 mb-4 mb-lg-0 d-flex flex-column justify-content-between bg-black text-white rounded-4 p-4 position-relative overflow-hidden">
+          <div>
+            <h2 class="fw-bold mb-2">Contact information</h2>
+            <div class="mb-3">Say something to start a live chat!</div>
+            <div class="mb-3 d-flex align-items-center">
+              <i class="bi bi-telephone fs-4 me-3"></i>
+              <span>(+01) 789 854 856</span>
+            </div>
+            <div class="mb-3 d-flex align-items-center">
+              <i class="bi bi-envelope fs-4 me-3"></i>
+              <span>info&#64;domain.com</span>
+            </div>
+            <div class="mb-3 d-flex align-items-center">
+              <i class="bi bi-geo-alt fs-4 me-3"></i>
+              <span>1234 Elm Street, Suite 567<br>Springfield, United States</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3 fs-4"><i class="bi bi-x"></i></a>
+            <a href="#" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+          </div>
+          <span class="position-absolute top-0 end-0 translate-middle p-2 bg-orange rounded-circle" style="width:10px;height:10px;"></span>
+          <div class="position-absolute bottom-0 end-0" style="width:200px;height:200px;background:rgba(255,255,255,0.08);border-radius:50%;right:-60px;bottom:-60px;"></div>
+        </div>
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+  <div class="row mb-3">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <label class="form-label fw-bold">First Name</label>
+      <input type="text" name="firstName" ngModel required
+             class="form-control border-0 border-bottom rounded-0"
+             placeholder="Enter Your Name">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label fw-bold">Last Name</label>
+      <input type="text" name="lastName" ngModel required
+             class="form-control border-0 border-bottom rounded-0"
+             placeholder="Enter Your Name">
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <label class="form-label fw-bold">Email</label>
+      <input type="email" name="email" ngModel required
+             class="form-control border-0 border-bottom rounded-0"
+             placeholder="Enter Your Email">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label fw-bold">Phone</label>
+      <input type="text" name="phone" ngModel required
+             class="form-control border-0 border-bottom rounded-0"
+             placeholder="Enter Your Number">
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <label class="form-label fw-bold">Message</label>
+    <textarea name="message" ngModel required
+              class="form-control border-0 border-bottom rounded-0"
+              rows="3" placeholder="Write Your Message"></textarea>
+  </div>
+
+<div class="d-flex align-items-center gap-3 mb-3">
+  <button type="button" class="btn btn-orange px-4 fw-bold" (click)="validateForm()">Send Message</button>
+</div>
+
+<!-- Success Message -->
+<div *ngIf="showSuccess" class="alert alert-success py-2 px-3 rounded-pill d-inline-flex align-items-center" style="font-size:1rem;">
+  Thank you for your message. It has been sent.
+</div>
+
+<!-- Error Message -->
+<div *ngIf="showError" class="alert alert-danger py-2 px-3 rounded-pill d-inline-flex align-items-center" style="font-size:1rem;">
+  One or more fields have an error. Please check and try again.
+</div>
+
+  <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+       xmlns="http://www.w3.org/2000/svg"
+       class="position-absolute" style="right:30px;bottom:-30px;">
+    <path d="M10 60 Q35 40 60 60" stroke="#bbb" stroke-width="2"
+          stroke-dasharray="6 6" fill="none"/>
+    <path d="M50 60 L60 60 L55 50 Z" stroke="#ff4d0a" stroke-width="2"
+          fill="none"/>
+  </svg>
+</form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

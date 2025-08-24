@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
     images: string[] = [
-    'assets/hero.jpg',
+    'assets/hero.webp',
     'assets/hero1.jpg',
-    'assets/hero2.jpg'
+    'assets/hero2.webp'
   ];
   
   currentImage: string = this.images[0];

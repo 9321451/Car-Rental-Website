@@ -11,7 +11,7 @@ export class FleetCardsComponent {
   cars = [
     {
       title: 'Sport Car',
-      image: 'assets/images/card.jpg',
+      image: 'assets/images/card.webp',
       iconClass: 'bi bi-box-arrow-up-right',
       btnClass: 'bg-orange'
     },
@@ -29,7 +29,7 @@ export class FleetCardsComponent {
     },
     {
       title: 'Luxury Car',
-      image: 'assets/images/card3.png',
+      image: 'assets/images/card3.jpg',
       iconClass: 'bi bi-box-arrow-up-right',
       btnClass: 'bg-orange'
     }

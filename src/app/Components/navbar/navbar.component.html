@@ -10,18 +10,43 @@
 
     <!-- Nav Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active fw-semibold" routerLink="">Home</a></li>
-        <li class="nav-item"><a class="nav-link fw-semibold" href="#">About Us</a></li>
-        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Service</a></li>
-        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Cars</a></li>
-        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Pages</a></li>
-        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Contact Us</a></li>
-      </ul>
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link fw-semibold"
+         routerLink=""
+         routerLinkActive="active-link"
+         [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    </li>
 
-      <!-- Book Button -->
-      <a href="#" class="btn btn-brand ms-lg-3 fw-bold">Book A Rental →</a>
-    </div>
+    <li class="nav-item">
+      <a class="nav-link fw-semibold"
+         routerLink="about"
+         routerLinkActive="active-link">About Us</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link fw-semibold"
+         routerLink="services"
+         routerLinkActive="active-link">Service</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link fw-semibold"
+         routerLink="cars"
+         routerLinkActive="active-link">Cars</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link fw-semibold"
+         routerLink="contact"
+         routerLinkActive="active-link">Contact Us</a>
+    </li>
+  </ul>
+
+  <!-- Book Button -->
+  <a href="#" class="btn btn-brand ms-lg-3 fw-bold">Book A Rental →</a>
+</div>
+
   </div>
 </nav>
 
