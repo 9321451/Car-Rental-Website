@@ -4,6 +4,8 @@
 }
 .bg-danger {
   background-color: #ff4d0a !important;
+  width:40px;
+  height:40px;
 }
 .text-danger {
   color: #ff4d0a !important;
@@ -22,8 +24,8 @@
     font-size: 2rem;
   }
   .rounded-circle {
-    width: 200px !important;
-    height: 200px !important;
+    width: 50px !important;
+    height: 50px !important;
   }
 }
 

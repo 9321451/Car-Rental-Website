@@ -10,5 +10,7 @@ import { TestemonialsComponent } from "../../Components/testemonials/testemonial
   styleUrl: './service.component.css'
 })
 export class ServiceComponent {
-
+   ngOnInit(): void {
+    window.scrollTo(0, 0); // 👈 scroll to top when ServicesComponent loads
+  }
 }

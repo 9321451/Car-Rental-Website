@@ -13,8 +13,8 @@
     margin-left: 40px;
     margin-right: 40px;
     border: 4px solid #ff4d0a;
-    border-radius: 68px;
     position: relative;
+    border-radius: 4rem;
   z-index: 2;
 }
 
@@ -33,9 +33,24 @@
     flex-direction: column !important;
     text-align: center;
     padding: 2rem 1rem !important;
+    border-radius: 0;
+    margin: 0;
+    height: 200px;
   }
   .cta-banner-bg img {
     max-width: 250px !important;
     margin-top: 2rem;
+  }
+  .row{
+    border-radius: 0;
+    border: none;
+  }
+  .banner{
+    border-radius: 0;
+    margin: 0;
+    border-bottom: 4px solid #FF3600;
+  }
+  .container-fluid{
+    padding: 0;
   }
 }

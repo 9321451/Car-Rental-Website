@@ -1,0 +1,23 @@
+
+.accordion-button {
+  font-weight: 600;
+  color: #212529;
+  font-size: 1.15rem;
+  background-color: transparent;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #FF3600; /* highlight color */
+  background-color: transparent;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  color: #6c757d;
+}

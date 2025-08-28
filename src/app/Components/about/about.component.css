@@ -17,3 +17,14 @@
   border: 6px solid #fff;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
+
+@media (max-width: 576px) {
+          .about-main-img {
+            max-width: 280px;
+            width: 80vw;
+          }
+          .about-overlay-img {
+            max-width: 150px;
+            width: 30vw;
+          }
+        }

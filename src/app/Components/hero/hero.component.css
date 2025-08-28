@@ -1,21 +1,58 @@
+/* HERO: responsive background and size */
 .hero {
-  overflow: hidden;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 15px;
+  margin: 0;                 /* remove margins */
+  border-radius: 40px;
+  margin: 20px 30px 30px 30px;          /* no radius */
+  min-height: clamp(100px, 100vh, 720px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* Booking form overlaps bottom of hero */
-.booking-form {
+/* Overlay form (≥ md) */
+.booking-form-overlay {
   position: absolute;
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
-  margin-bottom: 70px;
+  width: min(1100px, 92%);
+  z-index: 10;
+  margin-bottom: 60px;
 }
 
-.text-start{
-  color: black;
-  font-size: 1.25rem;
+.btn-sm-custom {
+            font-size: 1.3rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            padding-left: 1.4rem;
+            padding-right: 1.4rem;
+          }
+
+/* Mobile form (< md) sits below the hero naturally */
+.booking-form-mobile {
+  margin-top: 16px;          /* gap below hero */
+}
+
+/* Optional: tweak text color for the intro label */
+.text-start { color: #000; }
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 420px; /* or whatever works best */
+    margin: 0;
+    border-radius: 0;
+  }
+
+  
+
+}
+
+@media (max-width: 576px) {
+    .btn-sm-custom {
+            font-size: 0.8rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+          }
 }

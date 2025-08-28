@@ -51,3 +51,9 @@
 .service-card:hover i {
   color: #fff !important;
 }
+
+@media (max-width: 576px) {
+  .services-section{
+    height: 450vh;
+  }
+}

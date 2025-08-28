@@ -1,0 +1,44 @@
+.price-card {
+  background: #fff7f3;
+  border-radius: 24px;
+  max-width: 320px;
+  margin: auto;
+}
+.price-card .card-title {
+  color: #111;
+}
+.price-card hr {
+  border-top: 1px solid #a8a7a6;
+  margin: 1rem 0;
+}
+.price-card ul li i {
+  color: #ff4500;
+  font-size: 1.2rem;
+}
+.price-card .btn-danger {
+  background: #ff4500;
+  border: none;
+}
+.price-card .btn-outline-danger {
+  border-color: #ff4500;
+  color: #ff4500;
+}
+.price-card .btn-outline-danger:hover {
+  background: #ff4500;
+  color: #fff;
+}
+.price-card .btn {
+  box-shadow: none;
+}
+.price-card .rounded-circle {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.price-card .rounded-pill {
+  border-radius: 2rem !important;
+  
+}

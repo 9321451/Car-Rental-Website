@@ -15,5 +15,7 @@ import { CtaBannerComponent } from '../../Components/cta-banner/cta-banner.compo
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+   ngOnInit(): void {
+    window.scrollTo(0, 0); // 👈 scroll to top when ServicesComponent loads
+  }
 }

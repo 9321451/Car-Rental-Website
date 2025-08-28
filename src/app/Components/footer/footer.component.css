@@ -134,4 +134,8 @@
     align-items: flex-start;
     gap: 10px;
   }
+  .footer{
+    border-radius: 0;
+    margin: 0;
+  }
 }
