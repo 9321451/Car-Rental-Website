@@ -41,3 +41,9 @@
 .rs-img{
     border: 5px solid #FF3600;
 }
+
+@media (max-width: 768px) {
+  .how-it-works-section img {
+    max-width: 300px;
+  }
+}

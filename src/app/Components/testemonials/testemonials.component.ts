@@ -83,7 +83,7 @@ export class TestemonialsComponent {
   }
 ];
 
-  cardWidth = 100/4;
+  cardWidth = 100/2;
 
   // Show 4 cards at a time
   prev() {
@@ -93,7 +93,7 @@ export class TestemonialsComponent {
   }
 
   next() {
-    if (this.currentIndex < this.reviews.length - 4) {
+    if (this.currentIndex < this.reviews.length ) {
       this.currentIndex++;
     }
   }
