@@ -1,5 +1,6 @@
 import { NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-hero',
@@ -10,7 +11,7 @@ import { Component } from '@angular/core';
 export class HeroComponent {
     images: string[] = [
     'assets/hero.webp',
-    'assets/hero1.jpg',
+    'assets/hero1.webp',
     'assets/hero2.webp'
   ];
   
@@ -30,4 +31,16 @@ export class HeroComponent {
       clearInterval(this.intervalId);
     }
   }
+
+  ngAfterViewInit(): void {
+      const options = {
+        strings: ['Rent in Style.', 'Drive in Comfort.', 'Explore with NovaRide.'],
+        typeSpeed: 80,
+        backSpeed: 50,
+        backDelay: 1500,
+        loop: true
+      };
+  
+      new Typed('.typed-text', options);
+    }
 }

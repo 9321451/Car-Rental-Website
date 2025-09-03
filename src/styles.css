@@ -22,3 +22,17 @@
   background-color: #e53000 !important;
   color: #fff !important;
 }
+
+/* Make letters stack nicely and hide before animation starts */
+.animated-text span {
+  display: inline-block;
+}
+
+.animated-text span.not-visible {
+  opacity: 0;
+}
+
+/* (optional) tweak default duration */
+:root {
+  --animate-duration: 1s;
+}

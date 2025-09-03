@@ -1,14 +1,24 @@
 <section class="services-section d-flex align-items-center text-center text-lg-start">
   <div class="container">
     <div class="text-center">
-       <span class="text-brand fw-bold" style="font-size:1.1rem;">&#10033; Our Services</span>
+       <span class="text-brand fw-bold animate-on-scroll" data-animation="animate__fadeInUp" style="font-size:1.1rem;">&#10033; Our Services</span>
     </div>
-    <h1 class="fw-bold text-center mb-5">Explore our wide range of <br> rental services</h1>
+    <h1 class="fw-bold mb-3 animated-text text-center" *ngIf="animatedTextVisible">
+        <ng-container *ngFor="let line of ['Explore our wide range of' , 'rental services']">
+           <div>
+              <span *ngFor="let letter of line.split(''); let i = index"
+                [style.animationDelay]="(i * 0.05) + 's'"
+                  class="animate__animated animate__fadeInRight">
+                {{ letter === ' ' ? '\u00A0' : letter }}
+             </span>
+           </div>
+        </ng-container>
+      </h1>
 
     <!-- Cards Row -->
     <div class="row g-4">
       <!-- Loop services -->
-      <div class="col-md-3" *ngFor="let service of services">
+      <div class="col-md-3 animate-on-scroll" data-animation="animate__fadeInUp" *ngFor="let service of services">
         <div class="card h-100 shadow-sm p-4 service-card responsive-service-card">
           <div class="icon text-brand fs-1 mb-3"><i [ngClass]="service.icon"></i></div>
           <h5 class="fw-bold">{{service.title}}</h5>
@@ -20,15 +30,15 @@
       </div>
     </div>
 
-    <p class="lead mt-5 text-center">
+    <p class="lead mt-5 text-center animate-on-scroll" data-animation="animate__fadeInUp">
      Discover our range of car rental services designed to meet all your travel needs.
     </p>
-    <p class="lead text-center">
+    <p class="lead text-center animate-on-scroll" data-animation="animate__fadeInUp">
       From a diverse fleet of vehicles to flexible rental plans.
     </p>
 
     <!-- View All Button -->
-    <div class="text-center mt-5">
+    <div class="text-center mt-5 animate-on-scroll" data-animation="animate__fadeInUp">
       <a routerLink="services" class="btn btn-brand btn-lg rounded-pill px-5">View All Services</a>
     </div>
   </div>

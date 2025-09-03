@@ -9,6 +9,15 @@
   max-width: 400px;
 }
 
+.animated-text span {
+  display: inline-block;
+  opacity: 1; /* keep visible by default */
+}
+
+.animated-text span.not-visible {
+  opacity: 0; /* hide only before animation starts */
+}
+
 .overlay-img {
   position: absolute;
   bottom: -20px;
@@ -17,6 +26,7 @@
   border: 6px solid #fff;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
+
 
 @media (max-width: 576px) {
           .about-main-img {
