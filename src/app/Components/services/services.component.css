@@ -54,7 +54,7 @@
 
 @media (max-width: 576px) {
   .services-section{
-    height: 300vh;
+    height: 350vh;
     margin-left: 0;
   margin-right: 0;
   border-radius: 0;
@@ -63,7 +63,7 @@
             .service-card {
               padding: 1rem !important;
               font-size: 0.7rem;
-              width: 300px;
+              width: 320px;
               height: 100px;
             }
             .service-card .icon {
