@@ -1,18 +1,10 @@
 <div class="container py-5">
   <div class="text-center">
-    <span class="text-brand fw-bold animate-on-scroll" data-animation="animate__fadeInUp" style="font-size:1.1rem;">&#10033; Why Choose Us</span>
+    <span class="text-brand fw-bold " appAnimatOnScroll style="font-size:1.1rem;">&#10033; Why Choose Us</span>
   </div>
-  <h1 class="fw-bold mb-3 animated-text text-center" *ngIf="animatedTextVisible">
-        <ng-container *ngFor="let line of ['Unmatched quality and service', 'for your needs']">
-           <div>
-              <span *ngFor="let letter of line.split(''); let i = index"
-                [style.animationDelay]="(i * 0.05) + 's'"
-                  class="animate__animated animate__fadeInRight">
-                {{ letter === ' ' ? '\u00A0' : letter }}
-             </span>
-           </div>
-        </ng-container>
-      </h1>
+  <h1 class="fw-bold mb-3 text-center" appAnimatText >
+      Unmatched quality and service <br> for your needs  
+  </h1> 
   <div class="row align-items-center justify-content-center">
     <div class="col-lg-4 order-lg-2 d-flex justify-content-center mb-4 mb-lg-0">
   <div class="position-relative" style="width: 300px; height: 440px;">
@@ -31,7 +23,7 @@
 </div>
 
     <div class="col-lg-4 order-lg-1">
-      <div class="mb-5 d-flex align-items-start animate-on-scroll" data-animation="animate__fadeInUp">
+      <div class="mb-5 d-flex align-items-start" appAnimatOnScroll>
         <span class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center me-3" style="font-size:1.5rem;">
           <i class="bi bi-truck"></i>
         </span>
@@ -40,7 +32,7 @@
           <div class="text-secondary small">Quisque Sollicitudin Feugiat Risus, Eu Posuere Ex Euismod Eu. Phasellus Hendrerit, Massa</div>
         </div>
       </div>
-      <div class="mb-5 d-flex align-items-start animate-on-scroll" data-animation="animate__fadeInUp">
+      <div class="mb-5 d-flex align-items-start " appAnimatOnScroll>
         <span class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center me-3" style="width:40px;height:40px;font-size:1.5rem;">
           <i class="bi bi-people"></i>
         </span>
@@ -50,7 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-4 order-lg-3 animate-on-scroll" data-animation="animate__fadeInUp">
+    <div class="col-lg-4 order-lg-3 " appAnimatOnScroll>
       <div class="mb-5 d-flex align-items-start">
         <span class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center me-3" style="width:40px;height:40px;font-size:1.5rem;">
           <i class="bi bi-geo-alt"></i>
@@ -60,7 +52,7 @@
           <div class="text-secondary small">Quisque Sollicitudin Feugiat Risus, Eu Posuere Ex Euismod Eu. Phasellus Hendrerit, Massa</div>
         </div>
       </div>
-      <div class="mb-5 d-flex align-items-start animate-on-scroll" data-animation="animate__fadeInUp">
+      <div class="mb-5 d-flex align-items-start " appAnimatOnScroll>
         <span class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center me-3" style="width:40px;height:40px;font-size:1.5rem;">
           <i class="bi bi-shield-check"></i>
         </span>

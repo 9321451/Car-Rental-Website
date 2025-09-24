@@ -14,28 +14,20 @@
       <!-- Right Side: Text -->
       <div class="col-lg-6">
         <div>
-           <span class="text-brand fw-bold animate-on-scroll" data-animation="animate__fadeInUp" style="font-size:1.1rem;">&#10033; About</span>
+           <span class="text-brand fw-bold" appAnimatOnScroll style="font-size:1.1rem;">&#10033; About</span>
         </div>
-      <h1 class="fw-bold mb-3 animated-text" *ngIf="animatedTextVisible">
-        <ng-container *ngFor="let line of ['Your trusted partner in', 'reliable car rental']">
-           <div>
-              <span *ngFor="let letter of line.split(''); let i = index"
-                [style.animationDelay]="(i * 0.05) + 's'"
-                  class="animate__animated animate__fadeInRight">
-                {{ letter === ' ' ? '\u00A0' : letter }}
-             </span>
-           </div>
-        </ng-container>
+      <h1 class="fw-bold mb-3" appAnimatText="animate_fadeInRight">
+        Your trusted partner in <br> reliable car rental
       </h1>
 
 
-        <p class="text-muted animate-on-scroll" data-animation="animate__fadeInUp" >
+        <p class="text-muted" appAnimatOnScroll  >
           Aqestic Optio Amet A Ququam Saepe Aliquid Volutade Dicta Fuga Dolor Saerror Sed 
           Earum A Magni Soluta Quam Minus Dolor Dolor
         </p>
 
         <!-- Features -->
-        <div class="d-flex mb-3 animate-on-scroll" data-animation="animate__fadeInUp">
+        <div class="d-flex mb-3" appAnimatOnScroll >
           <div class="me-3 text-brand fs-3"><i class="bi bi-card-checklist"></i></div>
           <div>
             <h5 class="fw-bold">Easy Booking Process</h5>
@@ -43,7 +35,7 @@
           </div>
         </div>
         <hr>
-        <div class="d-flex mb-4 animate-on-scroll" data-animation="animate__fadeInUp">
+        <div class="d-flex mb-4" appAnimatOnScroll>
           <div class="me-3 text-brand fs-3"><i class="bi bi-car-front-fill"></i></div>
           <div>
             <h5 class="fw-bold">Convenient Pick-Up & Return Process</h5>
@@ -52,7 +44,7 @@
         </div>
 
         <!-- Button -->
-        <a routerLink="contact" class="btn btn-brand rounded-pill px-4 animate-on-scroll" data-animation="animate__fadeInUp">
+        <a routerLink="contact" class="btn btn-brand rounded-pill px-4" appAnimatOnScroll>
           Contact Us <i class="bi bi-arrow-up-right ms-1"></i>
         </a>
       </div>

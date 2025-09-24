@@ -1,9 +1,10 @@
-import { NgFor, NgIf } from '@angular/common';
-import { Component, ElementRef, Renderer2, Input } from '@angular/core';
+import { NgFor} from '@angular/common';
+import { Component} from '@angular/core';
+import { AnimatedTextDirective } from "../../Directives/animat-text.directive";
 
 @Component({
   selector: 'app-testemonials',
-  imports: [NgFor, NgIf],
+  imports: [NgFor, AnimatedTextDirective],
   templateUrl: './testemonials.component.html',
   styleUrl: './testemonials.component.css'
 })
@@ -102,24 +103,5 @@ export class TestemonialsComponent {
     return `translateX(-${this.currentIndex * this.cardWidth}%)`;
   }
 
-   @Input() animationClass: string = 'animate__fadeInRight';
-  animatedTextVisible = false;
-
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
-
-  ngOnInit(): void {
-    this.renderer.addClass(this.el.nativeElement, 'not-visible'); // hide initially
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          this.animatedTextVisible = true;
-          this.renderer.removeClass(this.el.nativeElement, 'not-visible');
-          observer.unobserve(this.el.nativeElement); // trigger once
-        }
-      });
-    }, { threshold: 0.2 });
-
-    observer.observe(this.el.nativeElement);
-  }
+   
 }
