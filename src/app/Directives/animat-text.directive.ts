@@ -6,7 +6,7 @@ import { Directive, AfterViewInit, Input, ElementRef, Renderer2 } from '@angular
 })
 export class AnimatedTextDirective implements AfterViewInit {
   @Input('appAnimatedText') animationClass: string = 'animate__fadeInRight';
-  @Input() delayStep: number = 0.05; // seconds per character
+  @Input() delayStep: number = 0.06; // seconds per character
 
   constructor(private el: ElementRef<HTMLElement>, private renderer: Renderer2) {
     // keep element visible (we animate chars individually)

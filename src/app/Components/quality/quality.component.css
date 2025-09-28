@@ -27,6 +27,14 @@
     width: 50px !important;
     height: 50px !important;
   }
+  .behind-img {
+  border-radius: 100px;
+  max-width: 280px;
+  max-height: 400px;
+}
+.img-front{
+  max-width: 280px;
+}
 }
 
 .behind-img {

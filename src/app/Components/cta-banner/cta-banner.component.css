@@ -26,17 +26,20 @@
     flex-direction: column !important;
     text-align: center;
     padding: 2rem 1rem !important;
-    border-radius: 20px;
+    border-radius: 0;
     margin: 0;
-    height: 650px;
+    height: 530px;
   }
   .cta-banner-bg img {
     max-width: 300px !important;
     margin-top: 1rem;
   }
   .banner{
-    height: 600px;
+    height: 550px;
     margin-left: 0;
     margin-right: 0;
-}
+ }
+ .container-fluid{
+  padding: 0;
+ }
 }

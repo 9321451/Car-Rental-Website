@@ -4,8 +4,6 @@ import { AboutUsComponent } from './Pages/aboutus/aboutus.component';
 import { ServiceComponent } from './Pages/service/service.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { MainCarDetailsComponent } from './Pages/main-car-details/main-car-details.component';
-import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
 export const routes: Routes = [
     {path: "", component: HomeComponent},
     {path: "about", component: AboutUsComponent, data: { breadcrumb: 'About Us' }},
